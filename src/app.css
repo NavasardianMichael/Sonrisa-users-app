@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10+ and Edge */
+	user-select: none; /* Standard syntax */
+}
+
+/*common styles*/
+a, a:hover {
+	text-decoration: none;
+}
+
+/*content*/
+#content {
+	padding: .5rem 1rem;
+}
+
+.user-page .main-block .gender-block {
+	text-align: right;
+}
+
+.user-page .main-block .username {
+	text-align: center;
+	padding: .5rem 0;
+}
+
+.user-page .info {
+	margin-top: .5rem;
+}
+
+.user-page .info p {
+	font-family: cursive;
+	text-transform: capitalize;
+}
+
+.user-page .info p:first-child {
+	margin: 0 1rem 0 0;
+}
+
+.user-page .info p:not(:first-child) {
+	margin: 1rem 0;
+}
+
+.user-page .info p img {
+	width: 2rem;
+	margin-right: 1rem;
+} 
+
+.user-item button img,
+.user-page .main-block button img {
+	width: 1.4rem;
+}
+
+.user-page .main-block .user-picture {
+	box-shadow: 1px 5px 16px lightgrey;
+	width: 100%;
+}
+
+.user-page .main-block button span {
+	padding: 0 15px;
+}
+
+.pagination {
+	margin-bottom: 0;
+}
+
+.pagination .page-item .page-link {
+	background: transparent;
+	color: grey;
+	padding: .75rem 1rem;
+}
+
+.pagination .page-item .page-link.active {
+	background: lightblue;
+	color: white;
+	border: none;
+}
+
+.pagination .page-item .page-link:focus {
+	box-shadow: none !important;
+}
+
+/*footer*/
+#footer {
+	width: 100%;
+}
+
+/*header*/
+#navbarMenu .nav-item,
+#footer .navbar {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: grey
+}
+
+#navbarMenu .nav-item {
+	background: transparent;
+	color: grey;
+	padding: .75rem 1rem;
+}
+
+#navbarMenu .nav-item.active {
+	background: lightblue;
+	color: white;
+}
+
+/*preloader*/
+.preloader {
+	margin: 0 auto;
+}
