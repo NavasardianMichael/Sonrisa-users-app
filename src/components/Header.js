@@ -11,7 +11,7 @@ function Header() {
 		<div id="header">
 			<nav className="navbar navbar-expand-md navbar-light bg-light">
 			  <Link className="navbar-brand text-center" to="/">
-			  	<img src="/logo.png"alt="logo" width="40" />
+			  	<img src={process.env.PUBLIC_URL + "/logo.png"} alt="logo" width="40" />
 			  	<br />Sonrisa
 			  </Link>
 			  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">

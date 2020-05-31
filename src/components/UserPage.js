@@ -32,27 +32,27 @@ function UserPage(props) {
 				<div className="col">
 					<div className="info">
 						<p>
-							<img src="/images/gender.png" alt="gender" title="gender"/>
+							<img src={process.env.PUBLIC_URL + "/images/gender.png"} alt="gender" title="gender"/>
 							gender: {user.gender}
 						</p>					
 						<p>
-							<img src="/images/location.png" alt="location" title="location"/>
+							<img src={process.env.PUBLIC_URL + "/images/location.png"} alt="location" title="location"/>
 							address: {user.location.country}, {user.location.state}, {user.location.city}, {user.location.street.name} {user.location.street.number}
 						</p>
 						<p>
-							<img src="/images/age.png" alt="age" title="age"/>
+							<img src={process.env.PUBLIC_URL + "/images/age.png"} alt="age" title="age"/>
 							birthday/age: {user.dob.date.slice(0, 10)} / {user.dob.age} years old
 						</p>
 						<p>
-							<img src="/images/registered-date.png" alt="registered date" title="registered date"/>
+							<img src={process.env.PUBLIC_URL + "/images/registered-date.png"} alt="registered date" title="registered date"/>
 							registered: {user.registered.date.slice(0, 10)}
 						</p>
 						<p>
-							<img src="/images/phone.png" alt="phone number" title="phone number"/>
+							<img src={process.env.PUBLIC_URL + "/images/phone.png"} alt="phone number" title="phone number"/>
 							phone number: {user.cell}
 						</p>
 						<p>
-							<img src="/images/email.png" alt="email" title="email"/>
+							<img src={process.env.PUBLIC_URL + "/images/email.png"} alt="email" title="email"/>
 							email: {user.email}
 						</p>																		
 					</div>					
