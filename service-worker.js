@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Sonrisa-users-app/precache-manifest.8ee5fdd784e5cbdd50bf113ce715329e.js"
+  "/Sonrisa-users-app/precache-manifest.26e80ac8d9cc65f7014968a438961128.js"
 );
 
 self.addEventListener('message', (event) => {
