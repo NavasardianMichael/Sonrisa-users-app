@@ -20,7 +20,7 @@ function UserPage(props) {
 	return (
 		<div className="user-page">
 			<div className="row">
-				<div className="col-md-4">
+				<div className="col-md-3">
 					<div className="main-block">
 					  <img src={user.picture.large} className="user-picture" alt="user" title="user" />
 					  <h4 className="username">{user.name.first} {user.name.last} ({user.login.username})</h4>
@@ -41,7 +41,7 @@ function UserPage(props) {
 						</p>
 						<p>
 							<img src={process.env.PUBLIC_URL + "/images/age.png"} alt="age" title="age"/>
-							birthday/age: {user.dob.date.slice(0, 10)} / {user.dob.age} years old
+							birthday/age: {user.dob.date.slice(0, 10)}/{user.dob.age} years old
 						</p>
 						<p>
 							<img src={process.env.PUBLIC_URL + "/images/registered-date.png"} alt="registered date" title="registered date"/>

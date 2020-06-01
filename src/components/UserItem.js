@@ -25,13 +25,13 @@ function UserItem(props) {
 				  	/>
 				  <div className="card-body">
 				  <h6 className="card-text text-center">{`${props.user.name.first} ${props.user.name.last}`}</h6>
-				  <div className="row">
+				  <div className="row text-center">
 				   	<div className="col">
-				   		<Link className="mt-3 py-1 btn btn-primary" to={`/users/${props.user.login.username}`}>
+				   		<Link className="mt-3 py-1 btn btn-primary" to={`users/${props.user.login.username}`}>
 				   			to profile
 				   		</Link>
 				   	</div>
-				   	<div className="col-md-4 text-right">
+				   	<div className="col-sm-4">
 					  {props.user.subscribed ?
 					  <button className="mt-3 p-1 btn" onClick={toggleSubscriptionHandler}><img src={process.env.PUBLIC_URL + "/images/unsubscribe.png"} alt="unsubscribe" title="unsubscribe" /></button> :
 					  <button className="mt-3 p-1 btn" onClick={toggleSubscriptionHandler}><img src={process.env.PUBLIC_URL + "/images/subscribe.png"} alt="subscribe" title="subscribe" /></button>}
