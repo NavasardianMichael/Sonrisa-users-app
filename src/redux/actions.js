@@ -1,4 +1,4 @@
-import { SET_PAGE_USERS, SET_PAGE_USERS_TO_SHOW, ADD_SUBSCRIPTION, REMOVE_SUBSCRIPTION, SHOW_PRELOADER, HIDE_PRELOADER } from './types';
+import { SET_PAGE_USERS, SET_PAGE_USERS_TO_SHOW, ADD_SUBSCRIPTION, REMOVE_SUBSCRIPTION, SHOW_PRELOADER, HIDE_PRELOADER, TOGGLE_THEME } from './types';
 
 export function setPageUsers(usersByPage) {
 	return {
@@ -23,6 +23,12 @@ export function showPreloader() {
 export function hidePreloader() {
 	return {
 		type: HIDE_PRELOADER
+	}
+};
+
+export function toggleTheme() {
+	return {
+		type: TOGGLE_THEME
 	}
 };
 

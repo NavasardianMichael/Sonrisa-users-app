@@ -1,7 +1,8 @@
-import { SHOW_PRELOADER, HIDE_PRELOADER } from './types';
+import { SHOW_PRELOADER, HIDE_PRELOADER, TOGGLE_THEME } from './types';
 
 const initialState = {
-	loading: false
+	loading: false,
+	darkTheme: false
 };
 
 function appReducer(state = initialState, action) {
@@ -9,7 +10,9 @@ function appReducer(state = initialState, action) {
 		case SHOW_PRELOADER:
 			return {...state, loading: true}
 		case HIDE_PRELOADER:
-			return {...state, loading: false}									
+			return {...state, loading: false}
+		case TOGGLE_THEME:
+			return {...state, darkTheme: !state.darkTheme}												
 		default: return state
 	}
 }

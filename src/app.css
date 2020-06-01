@@ -28,9 +28,16 @@ a, a:hover {
 	margin-top: .5rem;
 }
 
+#content.bg-secondary .subscriptions h4,
+#content.bg-secondary .user-page .main-block .username,
+#content.bg-secondary .user-page .info p {
+	color: white;
+}
+
 .user-page .info p {
-	font-family: fantasy;
+	font-family: sans-serif;
 	text-transform: capitalize;
+	letter-spacing: 1px
 }
 
 .user-page .info p:first-child {
@@ -52,7 +59,7 @@ a, a:hover {
 }
 
 .user-page .main-block .user-picture {
-	box-shadow: 1px 5px 16px lightgrey;
+	box-shadow: 1px 5px 7px lightgrey;
 	width: 100%;
 }
 
@@ -64,16 +71,25 @@ a, a:hover {
 	margin-bottom: 0;
 }
 
-.pagination .page-item .page-link {
+#content.bg-light .pagination .page-item .page-link {
 	background: transparent;
 	color: grey;
 	padding: .75rem 1rem;
 }
 
-.pagination .page-item .page-link.active {
+#content.bg-light .pagination .page-item .page-link.active {
 	background: lightblue;
 	color: white;
 	border: none;
+}
+
+#content.bg-secondary .pagination .page-item .page-link {
+	background: #343a40;
+	color: white;
+}
+
+#content.bg-secondary .pagination .page-item .page-link.active {
+	background: lightgrey
 }
 
 .pagination .page-item .page-link:focus {
@@ -86,16 +102,22 @@ a, a:hover {
 }
 
 /*header*/
-#navbarMenu .nav-item,
-#footer .navbar {
+.navbar-light .nav-item,
+#footer .navbar-light {
 	font-weight: bold;
+	color: grey;
 	text-transform: uppercase;
-	color: grey
+}
+
+.navbar-dark .nav-item,
+#footer .navbar-dark {
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
 }
 
 #navbarMenu .nav-item {
 	background: transparent;
-	color: grey;
 	padding: .75rem 1rem;
 }
 

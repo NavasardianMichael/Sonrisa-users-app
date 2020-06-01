@@ -16,7 +16,7 @@ function UserItem(props) {
 
 	return (
 			<div className="user-item">
-				<div className="card bg-light">
+				<div className={`card bg-${(props.darkTheme === true) ? 'dark' : 'light'}`}>
 				  <img 
 				  	  className="card-img-top w-100" 
 				  	  src={props.user.picture.large} 
@@ -27,7 +27,7 @@ function UserItem(props) {
 				  <h6 className="card-text text-center">{`${props.user.name.first} ${props.user.name.last}`}</h6>
 				  <div className="row text-center">
 				   	<div className="col">
-				   		<Link className="mt-3 py-1 btn btn-primary" to={`users/${props.user.login.username}`}>
+				   		<Link className={`mt-3 py-1 btn btn-outline-${(props.darkTheme === true) ? 'light' : 'secondary'}`} to={`users/${props.user.login.username}`}>
 				   			to profile
 				   		</Link>
 				   	</div>
@@ -41,6 +41,6 @@ function UserItem(props) {
 				</div>
 			</div>
 	)
-}
+};
 
 export default UserItem
