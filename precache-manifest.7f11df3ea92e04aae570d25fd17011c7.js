@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b64af4c09141a2abd4cc6cd6ec153af",
+    "revision": "7eaa32d0b88b3c6896a19316308b039c",
     "url": "/Sonrisa-users-app/index.html"
   },
   {
