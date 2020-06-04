@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Sonrisa-users-app/static/css/main.bf45f4bc.chunk.css",
-    "main.js": "/Sonrisa-users-app/static/js/main.e8d3dd49.chunk.js",
-    "main.js.map": "/Sonrisa-users-app/static/js/main.e8d3dd49.chunk.js.map",
+    "main.css": "/Sonrisa-users-app/static/css/main.ca643955.chunk.css",
+    "main.js": "/Sonrisa-users-app/static/js/main.be5af55f.chunk.js",
+    "main.js.map": "/Sonrisa-users-app/static/js/main.be5af55f.chunk.js.map",
     "runtime-main.js": "/Sonrisa-users-app/static/js/runtime-main.13702c12.js",
     "runtime-main.js.map": "/Sonrisa-users-app/static/js/runtime-main.13702c12.js.map",
-    "static/js/2.9491d9e9.chunk.js": "/Sonrisa-users-app/static/js/2.9491d9e9.chunk.js",
-    "static/js/2.9491d9e9.chunk.js.map": "/Sonrisa-users-app/static/js/2.9491d9e9.chunk.js.map",
+    "static/js/2.9344f9af.chunk.js": "/Sonrisa-users-app/static/js/2.9344f9af.chunk.js",
+    "static/js/2.9344f9af.chunk.js.map": "/Sonrisa-users-app/static/js/2.9344f9af.chunk.js.map",
     "index.html": "/Sonrisa-users-app/index.html",
-    "precache-manifest.26e80ac8d9cc65f7014968a438961128.js": "/Sonrisa-users-app/precache-manifest.26e80ac8d9cc65f7014968a438961128.js",
+    "precache-manifest.06df4b216314011d8ad1c2ccc8ab9f9c.js": "/Sonrisa-users-app/precache-manifest.06df4b216314011d8ad1c2ccc8ab9f9c.js",
     "service-worker.js": "/Sonrisa-users-app/service-worker.js",
-    "static/css/main.bf45f4bc.chunk.css.map": "/Sonrisa-users-app/static/css/main.bf45f4bc.chunk.css.map",
-    "static/js/2.9491d9e9.chunk.js.LICENSE.txt": "/Sonrisa-users-app/static/js/2.9491d9e9.chunk.js.LICENSE.txt"
+    "static/css/main.ca643955.chunk.css.map": "/Sonrisa-users-app/static/css/main.ca643955.chunk.css.map",
+    "static/js/2.9344f9af.chunk.js.LICENSE.txt": "/Sonrisa-users-app/static/js/2.9344f9af.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.13702c12.js",
-    "static/js/2.9491d9e9.chunk.js",
-    "static/css/main.bf45f4bc.chunk.css",
-    "static/js/main.e8d3dd49.chunk.js"
+    "static/js/2.9344f9af.chunk.js",
+    "static/css/main.ca643955.chunk.css",
+    "static/js/main.be5af55f.chunk.js"
   ]
 }
