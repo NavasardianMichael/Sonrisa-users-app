@@ -1,4 +1,4 @@
-import { SET_PAGE_USERS, SET_PAGE_USERS_TO_SHOW, ADD_SUBSCRIPTION, REMOVE_SUBSCRIPTION, SHOW_PRELOADER, HIDE_PRELOADER, TOGGLE_THEME } from './types';
+import { SET_PAGE_USERS, SET_PAGE_USERS_TO_SHOW, ADD_SUBSCRIPTION, REMOVE_SUBSCRIPTION, SHOW_PRELOADER, HIDE_PRELOADER, TOGGLE_THEME, SET_FILTERED_USERS_TO_SHOW } from './types';
 
 export function setPageUsers(usersByPage) {
 	return {
@@ -32,6 +32,13 @@ export function toggleTheme() {
 	}
 };
 
+export function setFilteredUsersToShow(usersToShow) {
+	return {
+		type: SET_FILTERED_USERS_TO_SHOW,
+		usersToShow
+	}
+};
+
 export function showUsersByPage(page, usersPerPage) {
 	return function(dispatch) {
 		dispatch(showPreloader());
@@ -45,6 +52,21 @@ export function showUsersByPage(page, usersPerPage) {
 		})
 	}
 };
+
+export function fetchUsersByCriteria(criteria) {
+	return function(dispatch) {
+		const natsString = Object.keys(criteria.checkedNationalities).toString()
+		dispatch(showPreloader());
+		fetch(`https://randomuser.me/api/?gender=${criteria.gender}&nat=${natsString}&results=${criteria.filteredUsersCount}`)
+		.then(response => response.json())
+		.then(data => {
+			data.results.forEach(item => item.subscribed = false);
+			dispatch(setFilteredUsersToShow(data.results));
+			console.log(data.results)
+			dispatch(hidePreloader());
+		})
+	}
+} 
 
 export function addSubscription(user) {
 	return {

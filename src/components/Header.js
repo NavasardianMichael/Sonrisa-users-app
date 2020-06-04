@@ -29,7 +29,7 @@ function Header(props) {
 			      <Link className="nav-item nav-Link mx-2 px-3" to="/users">users</Link>
 			      <Link className="nav-item nav-Link mx-2 px-3" to="/subscriptions">subscriptions</Link>
 			      <Link className="nav-item nav-Link mx-2 px-3" to="/filteredUsers">filtered users</Link>
-			      <button className={`text-capitalize ml-auto btn btn-outline-${(props.darkTheme === true) ? 'light' : 'secondary'}`} onClick={toggleThemeHandler}>change theme</button>
+			      <button className={`mt-1 text-capitalize ml-auto btn btn-outline-${(props.darkTheme === true) ? 'light' : 'secondary'}`} onClick={toggleThemeHandler}>change theme</button>
 			    </div>
 			  </div>
 			</nav>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, connect } from 'react-redux';
+import { connect } from 'react-redux';
 
 function Footer(props) {
 	return (

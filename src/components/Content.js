@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useRouteMatch } from "react-router-dom";
 import { connect } from 'react-redux';
 import Users from './Users';
 import Subscriptions from './Subscriptions';
@@ -8,6 +8,7 @@ import UserPage from './UserPage';
 
 
 function Content(props) {
+	let match = useRouteMatch();
 	return (
 		<div id="content" className={`bg-${props.darkTheme && 'secondary'}`}>
 			<Switch>
@@ -15,7 +16,9 @@ function Content(props) {
 	          <Route path="/subscriptions" exact component={Subscriptions} />
 	          <Route path="/filteredUsers" exact component={FilteredUsers} />
 			  <Route path="/" exact component={Users} />
-			  <Route path="/users/:username" exact component={UserPage} />
+			  <Route path="/users/:username" component={UserPage} />
+			  <Route path="/subscriptions/:username" component={UserPage} />
+			  <Route path="/filteredUsers/:username" component={UserPage} />			  			  
         	</Switch>
 		</div>
 	)

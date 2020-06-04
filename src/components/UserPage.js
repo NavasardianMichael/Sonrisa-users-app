@@ -6,7 +6,7 @@ import { addSubscription, removeSubscription } from '../redux/actions';
 function UserPage(props) {
 	const match = useRouteMatch();
 	const dispatch = useDispatch();
-	const user = props.usersToShow.find( item => item.login.username === match.params.username);
+	const user = props.usersToShow.find( item => item.login.username === match.params.username) || props.filteredUsersToShow.find( item => item.login.username === match.params.username)
 
 	function toggleSubscriptionHandler(event) {
 		if(user.subscribed) {
@@ -64,7 +64,8 @@ function UserPage(props) {
 
 const mapStateToProps = state => {
 	return {
-		usersToShow: state.data.usersToShow
+		usersToShow: state.data.usersToShow,
+		filteredUsersToShow: state.data.filteredUsersToShow
 	}
 }
 
