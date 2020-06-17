@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Sonrisa-users-app/static/css/main.ca643955.chunk.css",
-    "main.js": "/Sonrisa-users-app/static/js/main.be5af55f.chunk.js",
-    "main.js.map": "/Sonrisa-users-app/static/js/main.be5af55f.chunk.js.map",
+    "main.css": "/Sonrisa-users-app/static/css/main.ce700e58.chunk.css",
+    "main.js": "/Sonrisa-users-app/static/js/main.d68e5660.chunk.js",
+    "main.js.map": "/Sonrisa-users-app/static/js/main.d68e5660.chunk.js.map",
     "runtime-main.js": "/Sonrisa-users-app/static/js/runtime-main.13702c12.js",
     "runtime-main.js.map": "/Sonrisa-users-app/static/js/runtime-main.13702c12.js.map",
     "static/js/2.9344f9af.chunk.js": "/Sonrisa-users-app/static/js/2.9344f9af.chunk.js",
     "static/js/2.9344f9af.chunk.js.map": "/Sonrisa-users-app/static/js/2.9344f9af.chunk.js.map",
     "index.html": "/Sonrisa-users-app/index.html",
-    "precache-manifest.7f11df3ea92e04aae570d25fd17011c7.js": "/Sonrisa-users-app/precache-manifest.7f11df3ea92e04aae570d25fd17011c7.js",
+    "precache-manifest.743cf9703d623e1b0147d14647c83401.js": "/Sonrisa-users-app/precache-manifest.743cf9703d623e1b0147d14647c83401.js",
     "service-worker.js": "/Sonrisa-users-app/service-worker.js",
-    "static/css/main.ca643955.chunk.css.map": "/Sonrisa-users-app/static/css/main.ca643955.chunk.css.map",
+    "static/css/main.ce700e58.chunk.css.map": "/Sonrisa-users-app/static/css/main.ce700e58.chunk.css.map",
     "static/js/2.9344f9af.chunk.js.LICENSE.txt": "/Sonrisa-users-app/static/js/2.9344f9af.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.13702c12.js",
     "static/js/2.9344f9af.chunk.js",
-    "static/css/main.ca643955.chunk.css",
-    "static/js/main.be5af55f.chunk.js"
+    "static/css/main.ce700e58.chunk.css",
+    "static/js/main.d68e5660.chunk.js"
   ]
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7eaa32d0b88b3c6896a19316308b039c",
+    "revision": "4ae6b730957eaf558339cda6e47d6b5d",
     "url": "/Sonrisa-users-app/index.html"
   },
   {
-    "revision": "51f532d83d1933274453",
-    "url": "/Sonrisa-users-app/static/css/main.ca643955.chunk.css"
+    "revision": "4ede7f61379eb0747e1d",
+    "url": "/Sonrisa-users-app/static/css/main.ce700e58.chunk.css"
   },
   {
     "revision": "a6b2127c9ca133232cf7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sonrisa-users-app/static/js/2.9344f9af.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "51f532d83d1933274453",
-    "url": "/Sonrisa-users-app/static/js/main.be5af55f.chunk.js"
+    "revision": "4ede7f61379eb0747e1d",
+    "url": "/Sonrisa-users-app/static/js/main.d68e5660.chunk.js"
   },
   {
     "revision": "5f9e8c51ac89a5b0937e",
