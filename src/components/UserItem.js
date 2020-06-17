@@ -14,7 +14,6 @@ function UserItem(props) {
 			dispatch(addSubscription(props.user));
 		}
 	};
-
 	return (
 			<div className="user-item">
 				<div className={`card bg-${(props.darkTheme === true) ? 'dark' : 'light'}`}>
@@ -28,7 +27,7 @@ function UserItem(props) {
 				  <h6 className="card-text text-center">{`${props.user.name.first} ${props.user.name.last}`}</h6>
 				  <div className="row text-center">
 				   	<div className="col">
-				   		<Link className={`mt-3 py-1 btn btn-outline-${(props.darkTheme === true) ? 'light' : 'secondary'}`} to={`${match.url}/${props.user.login.username}`}>
+				   		<Link className={`mt-3 py-1 btn btn-outline-${(props.darkTheme === true) ? 'light' : 'secondary'}`} to={`${(match.url === '') ?  match.url : '/users'}/${props.user.login.username}`}>
 				   			to profile
 				   		</Link>
 				   	</div>

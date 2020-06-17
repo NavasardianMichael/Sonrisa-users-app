@@ -17,7 +17,7 @@ function Header(props) {
 	return (
 		<div id="header">
 			<nav className={`navbar navbar-expand-md navbar-${(props.darkTheme === true) ? 'dark' : 'light'} bg-${(props.darkTheme === true) ? 'dark' : 'light'}`}>
-			  <Link className="navbar-brand text-center" to="/">
+			  <Link className="navbar-brand text-center" to="/users">
 			  	<img src={process.env.PUBLIC_URL + "/logo.png"} alt="logo" width="40" />
 			  	<br />Sonrisa
 			  </Link>

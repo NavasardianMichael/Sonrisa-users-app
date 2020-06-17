@@ -34,6 +34,7 @@ input[type=number] {
 .user-page .main-block .username {
 	text-align: center;
 	padding: .5rem 0;
+	word-break: break-word;
 }
 
 .user-page .info {

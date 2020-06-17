@@ -15,10 +15,10 @@ function Content(props) {
 	          <Route path="/users" exact component={Users} />
 	          <Route path="/subscriptions" exact component={Subscriptions} />
 	          <Route path="/filteredUsers" exact component={FilteredUsers} />
-			  <Route path="/" exact component={Users} />
 			  <Route path="/users/:username" component={UserPage} />
-			  <Route path="/subscriptions/:username" component={UserPage} />
-			  <Route path="/filteredUsers/:username" component={UserPage} />			  			  
+			  <Route path="/subscriptions/:username" exact component={UserPage} />
+			  <Route path="/filteredUsers/:username" exact component={UserPage} />			  			  
+			  <Route path="/" component={Users} />
         	</Switch>
 		</div>
 	)
